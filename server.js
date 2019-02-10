@@ -17,3 +17,7 @@ app.get('/download', (req,res) => {
     format: 'mp3'
   }).pipe(res);
 });
+
+app.get('/hello', (req,res) => {
+  res.send("Hello world!");
+});
